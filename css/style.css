@@ -1,0 +1,124 @@
+/*Fonts starts */
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato Bold";
+  src: url("../fonts/Lato-Bold.eot?") format("eot"), url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.ttf") format("truetype"), url("../fonts/Lato-Bold.svg#Lato-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*Using Lato bold font for numbers in the "Most Popular Sports News"*/
+/* Color's definition starts*/
+/*color for alternate row's background*/
+/*color for text*/
+/*color for divider*/
+/* Color Definition ends*/
+/* Setting base styles starts*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  counter-reset: item;
+  font-size: 12px;
+}
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
+  margin-top: 0px;
+}
+ul,
+ol {
+  list-style-type: none;
+  padding-left: 0px;
+}
+/*Setting base styles ends*/
+/*Container starts*/
+@media (min-width: 1200px) {
+  .container {
+    width: 688px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.content {
+  border: 2px solid #a9a9a9;
+  margin-top: 5px;
+  padding: 15px 8px;
+}
+/*Container ends*/
+/* Header starts*/
+.main-header {
+  border-top: 4px solid #a9a9a9;
+  margin-top: 10px;
+}
+.main-header header {
+  background: url(../images/header-bg-image.png) repeat-x;
+  height: 28px;
+  margin-top: 2px;
+  position: relative;
+}
+.main-header header h1 {
+  color: #ffffff;
+  font: bold 16px Arial, Helvetica, sans-serif;
+  line-height: 17px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 6px;
+  left: 10px;
+}
+/*Header ends*/
+/*Breaking news content starts*/
+.breaking-news-content h2 {
+  color: #b51d21;
+  text-transform: uppercase;
+  font: bold 14px "Open Sans Bold", Arial, Helvetica, sans-serif;
+  line-height: 15px;
+}
+.breaking-news-content h2 span {
+  font-size: 12px;
+}
+.breaking-news-content li {
+  padding: 5px 8px;
+}
+.breaking-news-content li span {
+  color: #6e6e6e;
+  border-right: 1px solid #a1a1a1;
+  padding-right: 10px;
+  display: inline-block;
+}
+.breaking-news-content li a {
+  color: #0373b3;
+  padding-left: 6px;
+}
+.breaking-news-content li:nth-child(odd) {
+  background: #e5e5e5;
+  /*Targeting the odd number rows of li for different background color*/
+}
+.most-popular-sport-news-content h2 {
+  color: #249a31;
+  text-transform: uppercase;
+  font: bold 14px "Open Sans Bold", Arial, Helvetica, sans-serif;
+  line-height: 15px;
+}
+.most-popular-sport-news-content li {
+  counter-increment: item;
+  padding: 5px 8px;
+}
+.most-popular-sport-news-content li a {
+  color: #333132;
+}
+.most-popular-sport-news-content li:before {
+  content: counter(item) ".";
+  font-family: "Lato Bold", Arial, Helvetica, sans-serif;
+  margin-right: 5px;
+  color: #6e6e6e;
+  font-weight: bold;
+}
+.error {
+  color: #b51d21;
+}
