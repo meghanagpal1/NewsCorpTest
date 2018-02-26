@@ -115,7 +115,7 @@ ol {
 .most-popular-sport-news-content li:before {
   content: counter(item) ".";
   font-family: "Lato Bold", Arial, Helvetica, sans-serif;
-  margin-right: 5px;
+  margin-right: 3px;
   color: #6e6e6e;
   font-weight: bold;
 }
